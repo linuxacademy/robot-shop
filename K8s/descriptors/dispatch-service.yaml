@@ -6,7 +6,7 @@ metadata:
     kompose.version: 1.10.0 (8bb0907)
   creationTimestamp: null
   labels:
-    io.kompose.service: dispatch
+    app: dispatch
   name: dispatch
 spec:
   clusterIP: None
@@ -15,6 +15,6 @@ spec:
     port: 55555
     targetPort: 0
   selector:
-    io.kompose.service: dispatch
+    app: dispatch
 status:
   loadBalancer: {}

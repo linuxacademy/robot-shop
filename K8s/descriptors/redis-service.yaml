@@ -6,7 +6,7 @@ metadata:
     kompose.version: 1.10.0 (8bb0907)
   creationTimestamp: null
   labels:
-    io.kompose.service: redis
+    app: redis
   name: redis
 spec:
   ports:
@@ -14,6 +14,6 @@ spec:
     port: 6379
     targetPort: 6379
   selector:
-    io.kompose.service: redis
+    app: redis
 status:
   loadBalancer: {}

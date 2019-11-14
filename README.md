@@ -86,7 +86,7 @@ Snippet
         targetPort: 8080
         nodePort: 30080
       selector:
-        io.kompose.service: web
+        app: web
       sessionAffinity: None
       type: NodePort
 

@@ -6,7 +6,7 @@ metadata:
     kompose.version: 1.10.0 (8bb0907)
   creationTimestamp: null
   labels:
-    io.kompose.service: web
+    app: web
   name: web
 spec:
   type: NodePort
@@ -16,6 +16,6 @@ spec:
     targetPort: 8080
     nodePort: 30080
   selector:
-    io.kompose.service: web
+    app: web
 status:
   loadBalancer: {}

@@ -6,7 +6,7 @@ metadata:
     kompose.version: 1.10.0 (8bb0907)
   creationTimestamp: null
   labels:
-    io.kompose.service: catalogue
+    app: catalogue
   name: catalogue
 spec:
   ports:
@@ -14,6 +14,6 @@ spec:
     port: 8080
     targetPort: 8080
   selector:
-    io.kompose.service: catalogue
+    app: catalogue
 status:
   loadBalancer: {}

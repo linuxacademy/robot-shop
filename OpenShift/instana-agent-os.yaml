@@ -22,7 +22,7 @@ items:
     data:
       key: <your base64 encoded key here>
  
-  - apiVersion: extensions/v1beta1
+  - apiVersion: apps/v1
     kind: DaemonSet
     metadata:
       labels:

@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
@@ -6,16 +6,19 @@ metadata:
     kompose.version: 1.10.0 (8bb0907)
   creationTimestamp: null
   labels:
-    io.kompose.service: ratings
+    app: ratings
   name: ratings
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: ratings
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        io.kompose.service: ratings
+        app: ratings
     spec:
       containers:
       - image: linuxacademycontent/rs-ratings:latest

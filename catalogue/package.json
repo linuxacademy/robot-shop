@@ -11,7 +11,7 @@
   "dependencies": {
       "body-parser": "^1.18.1",
       "express": "^4.15.4",
-      "mongodb": "^2.2.33",
+      "mongodb": "^3.6.2",
       "instana-nodejs-sensor": "^1.28.0"
   }
 }
